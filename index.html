@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravindhan Murugesan - Civil Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .hero {
+            background-image: url('wallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            z-index: 1000;
+            transition: background 0.5s ease;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00aaff;
+        }
+
+        .content-section {
+            padding: 60px 20px;
+            display: none;
+            transition: transform 0.5s ease-in-out;
+            transform: scale(0.9);
+            opacity: 0;
+        }
+
+        .content-section.active {
+            display: block;
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .content-item {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Aravindhan Murugesan</h1>
+            <p> Structural Engineering Student | Aspiring to Advance in Civil Engineering | BIM | QA & QC | Teaching</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#About" onclick="showSection('About')">About</a></li>
+            <li><a href="#Summary" onclick="showSection('Summary')">Summary</a></li>
+            <li><a href="#Experience" onclick="showSection('Experience')">Experience</a></li>
+            <li><a href="#Education" onclick="showSection('Education')">Education</a></li>
+            <li><a href="#Projects" onclick="showSection('Projects')">Projects</a></li>
+            <li><a href="#Certifications" onclick="showSection('Certifications')">Certifications</a></li>
+            <li><a href="#Skills" onclick="showSection('Skills')">Skills</a></li>
+            <li><a href="#Others" onclick="showSection('Others')">Others</a></li>
+            <li><a href="#Gallery" onclick="showSection('Gallery')">Gallery</a></li>
+            <li><a href="#Contact" onclick="showSection('Contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="About" class="content-section">
+        <h2>About</h2>
+        <p>Hello! My name is Aravindhan Murugesan, I am currently a Structrual Engineering Student and Junior Quality Control Engineer at Popular Foundation Ltd, based in Chennai, Tamil Nadu. With a solid foundation in Civil Engineering, I specialize in Site Engineering and Quality Control, bringing a meticulous eye for detail to every project I undertake.</p>
+
+        <p>Over the past year, I have honed my skills in managing site engineering for residential projects and ensuring quality standards in hostel building construction. My expertise spans planning, 3D modeling, structural design, and quality assurance, and I am passionate about advancing in the fields of Structural Engineering and Building Information Modeling (BIM).</p>
+
+        <p>I am actively seeking opportunities that will allow me to continue growing as a Structural Engineer or QC Engineer while contributing to innovative and challenging projects. I am particularly drawn to roles that offer the chance to collaborate with forward-thinking teams and make a tangible impact on the built environment.</p>
+
+        <p>In my free time, I enjoy listening to music, exploring new places on my bike, and staying connected on social media.</p>
+
+        <p>I would be delighted to connect with professionals who share my interests or have opportunities that align with my skills and aspirations. Please feel free to reach out to me at +919629014823. I look forward to the possibility of working together!</p>
+    </section>
+
+    <section id="Summary" class="content-section">
+        <h2>Summary</h2>
+        <p>Dedicated Civil Engineering graduate with hands-on experience in quality control, site engineering, and project management. Currently pursuing a Master's degree in Structural Engineering to deepen my expertise and contribute to innovative construction solutions. Successfully reduced material wastage by 15% through stringent quality checks and designed an M25 mix to enhance strength and cost-efficiency. Skilled in using AutoCAD, Revit, and other BIM tools, aiming to leverage my skills in a dynamic engineering role.</p>
+    </section>
+
+    <section id="Experience" class="content-section">
+        <h2>Experience</h2>
+        <div class="content-item">
+            <h3>Jr. QC Engineer | Popular Foundation Ltd., Chennai</h3>
+            <p>From June 2024 - Present</p>
+            <ul>
+                <li>Material Inspection: Inspected incoming materials to ensure compliance with client specifications.</li>
+                <li>Inspection Execution: Conducted over 50 inspections per month as per approved Inspection Test Plans (ITPs), ensuring compliance with contractor quality standards and reducing non-conformance reports by 10%.</li>
+                <li>Document Review: Verified all required test certificates and reviewed Inspection Test Plans and Quality Plans before construction.</li>
+                <li>Reinforcement Inspection: Inspected reinforcement cages, verifying bar spacing, sizes, and proper lap lengths.</li>
+                <li>Load Testing: Oversaw and conducted compression, pullout, and lateral load tests.</li>
+                <li>Quality Reporting: Issued weekly Quality Observation Reports and facilitated meetings to discuss lessons learned.</li>
+                <li>Rebar and Formwork Inspection: Verified rebar conditions and inspected shuttering materials, ensuring compliance with drawings and specifications.</li>
+                <li>Concrete Inspection: Monitored concrete quality, conducted slump tests, and ensured proper concrete handling on-site.</li>
+                <li>Coordination: Acted as a liaison between the company, clients, and subcontractors regarding QA/QC issues.</li>
+                <li>Monthly Reporting: Prepared and submitted detailed monthly reports to the client.</li>
+        </div>
+        <div class="content-item">
+            <h3>Site Engineer | Saravana Construction, Sembodai</h3>
+            <p>From May 2023 - May 2024</p>
+            <ul>
+                <li>Site Engineering: Managed site tasks including marking, leveling, and supervising construction activities.</li>
+                <li>AutoCAD Planning: Developed detailed project plans using AutoCAD, enhancing project accuracy.</li>
+                <li>3D Designing: Created 3D interior and exterior designs using Revit Architecture and Lumion.</li>
+                <li>Estimations: Prepared project cost estimations, aiding in budget management.</li>
+                <li>Blueprint Preparation: Developed blueprints for building plan approvals.</li>
+                <li>Office Management: Handled administrative duties, ensuring smooth project operations.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Education" class="content-section">
+        <h2>Education</h2>
+        <div class="content-item">
+            <h3>Oxfoard Engineering College, Trichy.</h3>
+            <p>M.E Structural Engineering</p>
+            <ul>
+                <li>Enrolled (2024 to 2026)</li>
+            <ul>
+        </div>
+
+        <div class="content-item">
+            <h3>Sir Issac Newton College of Engineering and Technology, Nagapattinam.</h3>
+            <p>B.E Civil Engineering</p>
+            <ul>
+                <li>8.97 CGPA</li>
+                <li>29th Gradation at Anna University</li>
+                <li>Secured Department First at my College</li>
+            <ul>
+        </div>
+
+        <div class="content-item">
+            <h3>Govt Hr Sec School, Katharipulam.</h3>
+            <p>HSC, Maths-Biology</p>
+            <ul>
+                <li>70.5%</li>
+            <ul>
+        </div>
+
+         <div class="content-item">
+            <h3>Govt High Sec School, Nagakkudaiyan.</h3>
+            <p>SSLC, Maths-Science</p>
+            <ul>
+                <li>88%</li>
+            <ul>
+        </div>
+    </section>
+
+    <section id="Projects" class="content-section">
+        <h2>Projects</h2>
+        <div class="content-item">
+            <h3>Design of Rainwater Harvesting System for College Campus (SINCET).</h3>
+            <p>Utilized AutoCAD and Google Earth Pro to calculate catchment area and design pipeline, sump, and soak pit, leading to a 30% increase in water conservation.</p> 
+            <p>Successfully reduced annual water costs by INR 50,000 and provided a sustainable solution to campus water management</p>
+        </div>
+
+        <div class="content-item">
+            <h3>Planning of College Building Extension.</h3>
+            <p>Acted as 2D AutoCAD Planner, working with HOD to design renovation plans.</p>
+            <p>Improved space utilization by 25% through efficient planning.</p>
+        </div>
+    </section>
+
+    <section id="Certifications" class="content-section">
+        <h2>Certifications</h2>
+        <div class="content-item">
+            <h3>Master Diploma in Building Information Modelling (BIM).</h3>
+            <p>Completed a Six month certificate Course from Jan 2023 to Jun 2023 With A-Grade at CISAT Study Centre Nagapattinam.</p> 
+            <p>Which is includes BIM Softwares as Following</p>
+            <ul>
+                <li>AutoCAD: AutoCAD allows professionals to create precise 2D drawings and detailed 3D models for various industries like architecture, engineering, and design.</li>
+                <li>Revit Architecture: A BIM software for integrated 3D design and documentation, enabling architects to create coordinated and consistent building models.</li>
+                <li>Navisworks Manage: A project review software that integrates design and construction data for clash detection, coordination, and 4D simulation.</li>
+                <li>Tekla Structures: A BIM tool focused on structural engineering, used for detailed design and analysis of steel, concrete, and timber structures.</li>
+                <li>Lumion: A 3D rendering software that quickly turns architectural designs into photorealistic images, videos, and immersive experiences.</li>
+            <ul>
+        </div>
+
+        <div class="content-item">
+            <h3>Quantity Surveying and Building Estimation with Excel & CAD.</h3>
+            <p>This course teaches how to perform quantity takeoffs and prepare detailed cost estimates for construction projects using Excel and CAD tools..</p>
+        </div>
+
+        <div class="content-item">
+            <h3>Digital Land Surveying and Mapping.</h3>
+            <p>The "Digital Land Surveying and Mapping" course from Naan Muthalvan provides training on using modern digital tools and techniques for accurate land surveying and mapping. Participants will learn how to collect, process, and analyze geospatial data, as well as create detailed digital maps for various applications.</p>
+        </div>
+
+        <div class="content-item">
+            <h3>Staad Pro V8i.</h3>
+            <p>The "Staad Pro V8i" course on Udemy teaches structural analysis and design using Staad Pro V8i software. Learners will gain skills in modeling, analyzing, and designing structures such as buildings, bridges, and towers, ensuring they meet safety and compliance standards.</p>
+        </div>
+
+        <div class="content-item">
+            <h3>Award by UltraTech Cement Limited | For secured Department First.</h3>
+            <p>I was honored to receive a certificate and award from UltraTech Cement Limited for securing first place in my department during college. This recognition reflects my dedication to academic excellence and commitment to my field of study.</p>
+        </div>
+
+    </section>  
+
+    <section id="Skills" class="content-section">
+        <h2>Skills</h2>
+        <div class="content-item">
+            <h3>Software.</h3>
+            <ul>
+                <li>AutoCAD 2023: A CAD software for precise 2D drafting and 3D modeling of designs and blueprints.</li>
+                <li>Revit Architecture 2022: A BIM tool for integrated architectural design and construction documentation.</li>
+                <li>Navisworks Manage 2023: A software for project review, clash detection, and 4D simulation of construction models.</li>
+                <li>Tekla Structural Designer 2022: A BIM software for detailed structural analysis and design of buildings and infrastructure.</li>
+                <li>Staad Pro V8i: A structural engineering software for modeling, analysis, and design of various structures.</li>
+                <li>Lumion Pro 12.0: A rendering software for creating photorealistic images and animations from architectural designs.</li>
+                <li>MS Office: A suite of productivity tools for word processing, spreadsheets, and presentations.</li>
+                <li>Google Earth Pro: A mapping tool for viewing and analyzing geographic data and locations.</li>
+            <ul>
+        </div>
+
+        <div class="content-item">
+            <h3>Technical.</h3>
+            <ul>
+                <li>Quantity Surveying: Involves measuring and estimating construction project costs, including materials and labor.</li>
+                <li>Levelling & Surveying: Techniques for measuring and analyzing land elevations and creating accurate site maps.</li>
+                <li>Quality Assurance & Control: Ensures construction projects meet specified standards and quality through systematic testing and inspection.</li>
+            <ul>
+        </div>
+    </section>  
+
+    <section id="Others" class="content-section">
+        <h2>Others</h2>
+        <div class="content-item">
+            <h3>Strength.</h3>
+            <ul>
+                <li>Adaptability: Quickly adapt to new environments and challenges, demonstrated by successful transitions between various engineering roles.</li>
+                <li>Technical Expertise: Proficient in advanced engineering software and techniques, with a strong focus on precision and efficiency.</li>
+                <li>Result-Oriented: Achieved significant material savings and improved project timelines through effective project management and quality control measures.</li>
+            <ul>
+        </div>
+
+        <div class="content-item">
+            <h3>Interest</h3>
+            <ul>
+                <li>Structural Engineering: Passionate about developing innovative structural solutions that enhance safety and efficiency.</li>
+                <li>Building Information Modelling (BIM): Enthusiastic about leveraging BIM tools to streamline project workflows and improve collaboration.</li>
+                <li>Surveying & Levelling: Enjoy engaging in precise surveying and levelling activities to ensure the accuracy of construction projects.</li>
+            <ul>
+        </div>
+
+        <div class="content-item">
+            <h3>Languages</h3>
+            <ul>
+                <li>English: Proficient</li>
+                <li>Tamil: Fluent</li>
+                <li>Hindi: Basic</li>
+            <ul>
+        </div>
+
+        <div class="content-item">
+            <h3>Extracurricular Activities</h3>
+            <ul>
+                <li>Departmental Representative at College: Led initiatives to improve student engagement and organized technical workshops.</li>
+                <li>Event Coordinator for College Festivals: Successfully coordinated multiple events, enhancing organizational and leadership skills.</li>
+                <li>Drawing & Photography: Pursue creative interests in drawing and photography, which enhance attention to detail and visual presentation skills.</li>
+            <ul>
+        </div>
+
+        <div class="content-item">
+            <h3>Professional Responsibilities</h3>
+            <p>Popular Foundation Ltd., Chennai</p>
+            <p>Jr. QC Engineer (REC Boys Hostel) | June 2024 - Present</p>
+            <ul>
+                <li>Material Inspection: Inspected incoming materials to ensure compliance with client specifications.</li>
+                <li>Inspection Execution: Conducted over 50 inspections per month as per approved Inspection Test Plans (ITPs), ensuring compliance with contractor quality standards and reducing non-conformance reports by 10%.</li>
+                <li>Document Review: Verified all required test certificates and reviewed Inspection Test Plans and Quality Plans before construction.</li>
+                <li>Reinforcement Inspection: Inspected reinforcement cages, verifying bar spacing, sizes, and proper lap lengths.
+                <li>Load Testing: Oversaw and conducted compression, pullout, and lateral load tests.</li>
+                <li>Quality Reporting: Issued weekly Quality Observation Reports and facilitated meetings to discuss lessons learned.</li>
+                <li>Rebar and Formwork Inspection: Verified rebar conditions and inspected shuttering materials, ensuring compliance with drawings and specifications.</li>
+                <li>Concrete Inspection: Monitored concrete quality, conducted slump tests, and ensured proper concrete handling on-site.</li>
+                <li>Coordination: Acted as a liaison between the company, clients, and subcontractors regarding QA/QC issues.</li>
+                <li>Monthly Reporting: Prepared and submitted detailed monthly reports to the client.</li>
+            <ul>
+        </div>
+
+        <div class="content-item">
+            <p>Saravana Construction, Sembodai</p>
+            <p>Site Engineer (Residential Buildings) | May 2023 - May 2024</p>
+            <ul>
+                <li>Site Engineering: Managed site tasks including marking, leveling, and supervising construction activities.</li>
+                <li>AutoCAD Planning: Developed detailed project plans using AutoCAD, enhancing project accuracy.</li>
+                <li>3D Designing: Created 3D interior and exterior designs using Revit Architecture and Lumion.</li>
+                <li>Estimations: Prepared project cost estimations, aiding in budget management.</li>
+                <li>Blueprint Preparation: Developed blueprints for building plan approvals.</li>
+                <li>Office Management: Handled administrative duties, ensuring smooth project operations.</li>
+            <ul>
+        </div>
+
+    </section> 
+    <section>  
+        <section id="Gallery" class="content-section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="path/to/image1.jpg" alt="Description of image 1" class="gallery-item">
+            <img src="path/to/image2.jpg" alt="Description of image 2" class="gallery-item">
+            <img src="path/to/image3.jpg" alt="Description of image 3" class="gallery-item">
+            <img src="path/to/image4.jpg" alt="Description of image 4" class="gallery-item">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+ 
+
+    <section id="Contact" class="content-section">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <h2>Contact</h2>
+        <div class="content-item">
+            <p>
+                <a href="tel:+919629014823" style="color: black; text-decoration: none;">
+                    <i class="fas fa-phone" style="color: green;"></i> Mobile: +91 96290 14823
+                </a><br>
+                <a href="mailto:aravindha.m4823@gmail.com" style="color: black; text-decoration: none;">
+                    <i class="fas fa-envelope" style="color: red;"></i> Email: aravindha.m4823@gmail.com
+                </a><br>
+                <a href="https://wa.me/919629014823" target="_blank" style="color: black; text-decoration: none;">
+                    <i class="fab fa-whatsapp" style="color: green;"></i> Chat on WhatsApp
+                </a>
+            </p>
+
+        <div class="content-item">
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .links-section {
+            padding: 20px;
+            background-color: #f9f9f9; /* Optional background color */
+            border-top: 1px solid #ccc; /* Optional border for separation */
+        }
+        .links-section h2 {
+            margin-bottom: 15px;
+        }
+        .links-section a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+            display: inline-flex;
+            align-items: center;
+        }
+        .links-section i {
+            margin-right: 8px; /* Space between icon and text */
+        }
+        .fa-instagram { color: #E1306C; }
+        .fa-linkedin { color: #0077b5; }
+        .fa-facebook { color: #3b5998; }
+        .fa-slideshare { color: #ff6600; }
+        .fa-naukri { color: #f37c22; } /* Note: Use a suitable icon for Naukri if available */
+    </style>
+</head>
+<body>
+    <!-- Existing content here -->
+
+    <!-- New Useful Links Section -->
+    <section id="UsefulLinks" class="links-section">
+        <h2>Useful Links</h2>
+        <a href="https://www.instagram.com/aravindhanm563/" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="http://www.linkedin.com/in/aravindhanm4823" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://www.slideshare.net/AravindhanMurugesan1" target="_blank">
+            <i class="fab fa-slideshare"></i> SlideShare
+        </a>
+        <a href="https://www.naukri.com/mnjuser/profile" target="_blank">
+            <i class="fas fa-briefcase"></i> Naukri <!-- Use a suitable icon for Naukri if available -->
+        </a>
+    </section>
+
+    <!-- More existing content here -->
+</body>
+</html>
+
+        </div>
+    </section>
+     
+
+
+    <!-- Add other sections here similar to the "experience" section -->
+
+    <footer>
+        <p>&copy; 2024 Aravindhan Murugesan. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            var activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
